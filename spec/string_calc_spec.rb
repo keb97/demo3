@@ -13,6 +13,11 @@ describe "String Calculator" do
 
       	result.should be 1
   	  end
+
+  	  it "raises an error when something.." do
+  	  	expect {make_calc.add("-1")}.to raise_error
+  	  end
+
   	  it "returns that number for different numbers" do
   	  	result = make_calc.add("2")
 
